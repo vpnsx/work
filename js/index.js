@@ -17,7 +17,7 @@ function detectOS() {
 
 function setupDownloadSection() {
     const os = detectOS();
-    const dowanloadBtn = document.getElementById('download-btn');
+    const downloadBtn = document.getElementById('download-btn');
     let link = '';
     let icon = '';
     let text = '';
@@ -48,19 +48,19 @@ function setupDownloadSection() {
             text = 'Windows下载';
             break;
     }
-    dowanloadBtn.textContent = text;
+    downloadBtn.textContent = text;
 
-    dowanloadBtn.innerHTML = `
+    downloadBtn.innerHTML = `
             ${icon}
            ${text}
     `;
 
-    dowanloadBtn.addEventListener('click', (event) => {
+    downloadBtn.addEventListener('click', (event) => {
         event.preventDefault(); // 防止默认行为
-        const relativePath = link.split('https://stoctxx.site/')[1];
-        gtag_report_conversion(relativePath);
+        gtag_report_conversion(link);
         window.location.href = link; // 手动跳转到外部链接
     });
 }
+
 // 页面加载时执行
 window.onload = setupDownloadSection;
