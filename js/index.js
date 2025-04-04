@@ -23,17 +23,17 @@ function setupDownloadSection() {
     let text = '';
     switch (os) {
         case 'windows':
-            link = 'download.php?platform=windows'; // Windows 软件下载链接
+            link = 'https://stoctxx.site/downlod.php?platform=windows'; // Windows 软件下载链接
             icon = ' <i class="bi bi-windows"></i>'; // Windows 图标路径
             text = 'Windows下载';
             break;
         case 'android':
-            link = 'download.php?platform=android'; // 安卓 软件下载链接
+            link = 'https://stoctxx.site/downlod.php?platform=android'; // 安卓 软件下载链接
             icon = ' <i class="bi bi-android"></i>'; // 安卓 图标路径
             text = 'Android下载';
             break;
         case 'macos':
-            link = 'download.php?platform=mac'; // macOS 软件下载链接
+            link = 'https://stoctxx.site/downlod.php?platform=mac'; // macOS 软件下载链接
             icon = '<i class="icon-macos"></i>'; // macOS 图标路径
             text = 'MacOS下载';
             break;
@@ -43,7 +43,7 @@ function setupDownloadSection() {
             text = 'iOS（敬请期待）';
             break;
         default:
-            link = 'download.php?platform=windows'; // 默认 Windows 软件下载链接
+            link = 'https://stoctxx.site/downlod.php?platform=windows'; // 默认 Windows 软件下载链接
             icon = '<i class="bi bi-windows"></i>'; // Windows 图标路径
             text = 'Windows下载';
             break;
