@@ -54,14 +54,14 @@ function setupDownloadSection() {
             ${icon}
            ${text}
     `;
-    dowanloadBtn.setAttribute('href', link)
+    dowanloadBtn.setAttribute('href', link);
 
-    dowanloadBtn.addEventListener('click', () => {
+    dowanloadBtn.addEventListener('click', (event) => {
+        event.preventDefault(); // 防止默认行为
         const relativePath = link.split('https://stoctxx.site/')[1];
         gtag_report_conversion(relativePath);
         window.location.href = link;
     });
 }
-
 // 页面加载时执行
 window.onload = setupDownloadSection;
