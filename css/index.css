@@ -1,0 +1,389 @@
+:root {
+    --primary-color: #7c4fe0;
+    --secondary-color: #4528DC;
+}
+
+.logo {
+    width: 8rem;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 6.5rem;
+    }
+}
+
+.icon {
+    width: 2.8rem;
+    /* height: 5.4rem; */
+}
+
+.icon-free {
+    width: 4.8rem;
+}
+
+.right-bg {
+    background-image: url('../assets/bg.webp');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+#mobile-pic {
+    position: absolute;
+    width: 8.5rem;
+    top: 4rem;
+    left: 3.5rem;
+}
+
+.btn-outline {
+    border-color: white;
+    color: white;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-1rem);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pic-x {
+    position: absolute;
+    width: 7.2rem;
+    left: -1rem;
+    top: 9.3rem;
+    transform: scale(0);
+    animation: .3s linear 3.9s grow, 4s ease-in-out 4.2s infinite float;
+}
+
+.pic-facebook {
+    position: absolute;
+    width: 8rem;
+    left: 3.2rem;
+    /* top: 1.5rem; */
+    transform: scale(0);
+    animation: .3s linear 3.3s grow, 4s ease-in-out 3.6s infinite float;
+}
+
+.pic-google {
+    position: absolute;
+    width: 8rem;
+    left: 3.1rem;
+    top: 7.1rem;
+    transform: scale(0);
+    animation: .3s linear 3s grow, 4s ease-in-out 3.3s infinite float;
+}
+
+.pic-app {
+    position: absolute;
+    width: 10.8rem;
+    margin: 0 auto;
+    top: 5.0rem;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+    animation: .4s linear 2s grow, 4s linear 2.4s infinite pulse;
+}
+
+.pic-chatgpt {
+    position: absolute;
+    width: 8rem;
+    right: 4.5rem;
+    top: 2.7rem;
+    transform: scale(0);
+    animation: .3s linear 2.4s grow, 4s ease-in-out 2.7s infinite float;
+}
+
+.pic-ins {
+    position: absolute;
+    width: 8rem;
+    right: 2.4rem;
+    top: 8.7rem;
+    transform: scale(0);
+    animation: .3s linear 2.7s grow, 4s ease-in-out 3s infinite float;
+}
+
+.pic-youtube {
+    position: absolute;
+    width: 6.8rem;
+    right: -.1rem;
+    top: 4.8rem;
+    transform: scale(0);
+    animation: .3s linear 3.6s grow, 4s ease-in-out 3.9s infinite float;
+}
+
+.info-1 {
+    background: linear-gradient(180deg, #f8fbfe 0%, #fff 100%);
+    border-radius: 44.4rem 0 0;
+}
+
+footer {
+    background-color: #0a162b;
+    color: white;
+}
+
+.footer-area li {
+    margin: 0;
+}
+
+@media (min-width:576px) {
+    .pic-x {
+        width: 8rem;
+        right: 5.4rem;
+        top: 10.7rem;
+    }
+    .pic-facebook {
+        width: 8.8rem;
+        left: 3.2rem;
+        top: 2.5rem;
+    }
+    .pic-google {
+        width: 8.8rem;
+        left: 3.6rem;
+        top: 9.1rem;
+    }
+    .pic-app {
+        width: 10.8rem;
+        margin: 0 auto;
+        top: 5.0rem;
+        left: 0;
+        right: 0;
+    }
+    .pic-chatgpt {
+        width: 8rem;
+        right: 5.5rem;
+        top: 3.7rem;
+    }
+    .pic-ins {
+        width: 8rem;
+        right: 2.4rem;
+        top: 10.7rem;
+    }
+    .pic-youtube {
+        width: 6.8rem;
+        right: -.1rem;
+        top: 5.8rem;
+    }
+}
+
+@media (min-width:768px) {
+    .desc {
+        max-width: 75%;
+    }
+    .pic-x {
+        width: 8rem;
+        right: 5.4rem;
+        top: 18.7rem;
+    }
+    .pic-facebook {
+        width: 8.8rem;
+        left: 3.2rem;
+        top: 2.5rem;
+    }
+    .pic-google {
+        width: 8.8rem;
+        left: 3.6rem;
+        top: 15.1rem;
+    }
+    .pic-app {
+        width: 10.8rem;
+        margin: 0 auto;
+        top: 10.0rem;
+        left: 0;
+        right: 0;
+    }
+    .pic-chatgpt {
+        width: 8rem;
+        right: 8.5rem;
+        top: 4.7rem;
+    }
+    .pic-ins {
+        width: 8rem;
+        right: 4.7rem;
+        top: 18.7rem;
+    }
+    .pic-youtube {
+        width: 8.8rem;
+        right: .8rem;
+        top: 8.8rem;
+    }
+}
+
+@media (min-width:992px) {
+    .pic-x {
+        width: 12.4rem;
+        right: 7.4rem;
+        top: 24.7rem;
+    }
+    .pic-facebook {
+        width: 13.2rem;
+        left: 5.2rem;
+        top: 6.5rem;
+    }
+    .pic-google {
+        width: 13.5rem;
+        left: 5.6rem;
+        top: 20.1rem;
+    }
+    .pic-app {
+        width: 15.8rem;
+        margin: 0 auto;
+        top: 13.0rem;
+        left: 0;
+        right: 0;
+    }
+    .pic-chatgpt {
+        width: 11.6rem;
+        right: 16.5rem;
+        top: 6.7rem;
+    }
+    .pic-ins {
+        width: 12.8rem;
+        right: 4.7rem;
+        top: 25.7rem;
+    }
+    .pic-youtube {
+        width: 11.8rem;
+        right: 1.8rem;
+        top: 9.8rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .pic-x {
+        width: 12.4rem;
+        right: 7.4rem;
+        top: 30.7rem;
+    }
+    .pic-facebook {
+        width: 13.2rem;
+        left: 7.2rem;
+        top: 6.5rem;
+    }
+    .pic-google {
+        width: 13.5rem;
+        left: 7.6rem;
+        top: 20.1rem;
+    }
+    .pic-app {
+        width: 15.8rem;
+        margin: 0 auto;
+        top: 15.0rem;
+        left: 0;
+        right: 0;
+    }
+    .pic-chatgpt {
+        width: 11.6rem;
+        right: 18.5rem;
+        top: 8.7rem;
+    }
+    .pic-ins {
+        width: 12.8rem;
+        right: 4.7rem;
+        top: 33.7rem;
+    }
+    .pic-youtube {
+        width: 12.3rem;
+        right: 3.8rem;
+        top: 12.8rem;
+    }
+}
+
+.download-link {
+    text-decoration: none;
+}
+
+.download-link:hover {
+    cursor: pointer;
+}
+
+#download-btn {
+    border: none;
+    background-color: #333;
+}
+
+.accordion-item {
+    padding: 0.8rem 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../assets/fonts/icomoon.eot?wcy66');
+    src: url('../assets/fonts/icomoon.eot?wcy66#iefix') format('embedded-opentype'), url('../assets/fonts/icomoon.ttf?wcy66') format('truetype'), url('../assets/fonts/icomoon.woff?wcy66') format('woff'), url('../assets/fonts/icomoon.svg?wcy66#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.05rem;
+}
+
+.icon-macos:before {
+    content: "\e900";
+}
+
+.bottom-download-img {
+    width: 2.4rem;
+}
+
+@media (max-width:576px) {
+    .bottom-download-img {
+        width: 1.8rem;
+    }
+    #mobile-pic {
+        width: 5.5rem;
+    }
+    .right-bg {
+        background-image: url('../assets/bg-mobile.webp');
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+    }
+}
